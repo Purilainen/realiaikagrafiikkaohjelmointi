@@ -1,11 +1,10 @@
 #include <vector>
 #include <iostream>
-
+#include <math.h>
 
 template<class T> class vector_T
 {
 public:
-
 	vector_T(int n)
 	{
 		values.resize(n); 
@@ -13,6 +12,7 @@ public:
 		{
 			i = 0.0;
 		}
+		initialSize = n;
 	}
 	vector_T(int n, T &v)
 	{
@@ -21,6 +21,7 @@ public:
 		{
 			values[i] = v[i];
 		}
+		initialSize = n;
 	}
 
 	vector_T operator+(const vector_T &x) const
@@ -52,7 +53,7 @@ public:
 	}
 	vector_T operator*(const vector_T &x) const
 	{
-		//pistetulo - scalar
+		
 		if (GetSize() != x.GetSize())
 		{
 			std::cout << "Error *operator";
@@ -64,14 +65,20 @@ public:
 		}
 		return v;
 
-	}
-
+	} // Pistetulo
+	vector_T operator*(int scalar) const
+	{
+		vector_T v(GetSize());
+		for (int i = 0; i < GetSize(); i++)
+		{
+			v.values[i] = values[i] * scalar;
+		}
+		return v;
+	} // Skalaaritulo
 
 	void Push(T const& x)
 	{
-		
-
-		if (values.front() == 0)
+		if (values.front() == 0 && values.size() <= initialSize)
 		{
 			values.erase(values.begin());
 		}
@@ -90,13 +97,29 @@ public:
 	{
 		return values.size();
 	}
+	float GetNorm()
+	{
+		vector_T v(GetSize());
+		for (int i = 0; i < GetSize(); i++)
+		{
+			v.values[i] = (values[i]) ^ 2;
+		}
+
+		for (int  i = 0; i < v.GetSize(); i++)
+		{
+			vecLength += std::sqrt(v.values.at(i));
+		}
+
+		std::cout << vecLength;
+		return vecLength;
+	}
 
 private:
 	std::vector<T> values;
+	int initialSize = 0;
+	float vecLength = 0;
+	float tempValue = 0;
 };
-
-
-
 
 
 int main()
@@ -121,6 +144,12 @@ int main()
 
 	vector3 = vector2 * vector1;
 	vector3.Print();
+
+	vector3 = vector1 * 2;
+	vector3.Print();
+
+	vector1.GetNorm();
+
 
 	system("pause");
 }
