@@ -1,33 +1,44 @@
-﻿Build started 27.10.2015 15:29:29.
+﻿Build started 3.11.2015 14:16:30.
      1>Project "C:\Users\PyryKos\Desktop\realiaikagrafiikkaohjelmointi\realaikgrafHarj\realaikgrafHarj\realaikgrafHarj.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
-     1>c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(13): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-                 c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(8) : while compiling class template member function 'vector_T<int>::vector_T(int)'
-                 c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(127) : see reference to function template instantiation 'vector_T<int>::vector_T(int)' being compiled
-                 c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(127) : see reference to class template instantiation 'vector_T<int>' being compiled
-     1>c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(81): warning C4018: '<=' : signed/unsigned mismatch
-                 c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(80) : while compiling class template member function 'void vector_T<int>::Push(const T &)'
+     1>c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(266): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(273): error C2679: binary '<<' : no operator found which takes a right-hand operand of type 'matrix_T<int>' (or there is no acceptable conversion)
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(498): could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(478): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(458): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(438): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(418): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(397): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(377): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(356): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(336): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(316): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(291): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(271): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(237): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(217): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::_Bool)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(210): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(203): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(197): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(699): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(746): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(784): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(831): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(957): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(964): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(971): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(978): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(988): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,matrix_T<int>>(std::basic_ostream<char,std::char_traits<char>> &&,const _Ty &)'
                  with
                  [
-                     T=int
+                     _Ty=matrix_T<int>
                  ]
-                 c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(131) : see reference to function template instantiation 'void vector_T<int>::Push(const T &)' being compiled
-                 with
-                 [
-                     T=int
-                 ]
-     1>c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(110): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-                 c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(101) : while compiling class template member function 'float vector_T<int>::GetNorm(void)'
-                 c:\users\pyrykos\desktop\realiaikagrafiikkaohjelmointi\realaikgrafharj\realaikgrafharj\source.cpp(151) : see reference to function template instantiation 'float vector_T<int>::GetNorm(void)' being compiled
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\PyryKos\Desktop\realiaikagrafiikkaohjelmointi\realaikgrafHarj\Debug\realaikgrafHarj.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\PyryKos\Desktop\realiaikagrafiikkaohjelmointi\realaikgrafHarj\Debug\realaikgrafHarj.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\PyryKos\Desktop\realiaikagrafiikkaohjelmointi\realaikgrafHarj\Debug\realaikgrafHarj.lib" /MACHINE:X86 Debug\matrix.obj
-         Debug\Source.obj
-         Debug\vector.obj
-         realaikgrafHarj.vcxproj -> C:\Users\PyryKos\Desktop\realiaikagrafiikkaohjelmointi\realaikgrafHarj\Debug\realaikgrafHarj.exe
-     1>Done Building Project "C:\Users\PyryKos\Desktop\realiaikagrafiikkaohjelmointi\realaikgrafHarj\realaikgrafHarj\realaikgrafHarj.vcxproj" (Build target(s)).
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\ostream(1026): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+                 while trying to match the argument list '(std::ostream, matrix_T<int>)'
+     1>Done Building Project "C:\Users\PyryKos\Desktop\realiaikagrafiikkaohjelmointi\realaikgrafHarj\realaikgrafHarj\realaikgrafHarj.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.71
+Time Elapsed 00:00:00.36

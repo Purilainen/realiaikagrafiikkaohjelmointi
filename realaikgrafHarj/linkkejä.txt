@@ -1,0 +1,5 @@
+Matrix -class
+https://www.quantstart.com/articles/Matrix-Classes-in-C-The-Source-File
+https://www.quantstart.com/articles/Matrix-Classes-in-C-The-Header-File
+
+https://www.dropbox.com/sh/zovmez6vjzy8s4f/AAD_RD4TqmdDzjJjejFmWhKVa?dl=0
